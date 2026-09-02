@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confere & Paga</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; min-height: 100vh; }
+        .container { max-width: 480px; margin: 0 auto; background: #fff; min-height: 100vh; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+        .header { display: flex; align-items: center; padding: 16px 20px; background: #fff; border-bottom: 1px solid #f0f0f0; }
+        .logo { width: 48px; height: 48px; border-radius: 50%; margin-right: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .brand-name { font-size: 18px; font-weight: 800; color: #1a1a1a; }
+        .brand-tag { font-size: 11px; color: #ff6b00; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .promo-bar { background: linear-gradient(135deg, #ff6b00 0%, #ff9500 100%); color: white; text-align: center; padding: 12px; font-size: 13px; font-weight: 700; }
+        .product-image { width: 100%; height: 450px; object-fit: cover; display: block; }
+        .product-info { padding: 28px 24px; }
+        .product-title { font-size: 22px; font-weight: 700; color: #1a1a1a; line-height: 1.4; margin-bottom: 20px; }
+        .price-card { background: #f8f9fa; border-radius: 16px; padding: 24px; margin-bottom: 24px; text-align: center; }
+        .price-old { font-size: 16px; color: #aaa; text-decoration: line-through; margin-bottom: 4px; }
+        .price-new { font-size: 48px; font-weight: 900; color: #ff6b00; line-height: 1; }
+        .price-cents { font-size: 24px; }
+        .price-save { display: inline-block; background: #00c853; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; margin-top: 12px; }
+        .features { margin-bottom: 24px; }
+        .feature { display: flex; align-items: center; padding: 14px 0; border-bottom: 1px solid #f5f5f5; }
+        .feature:last-child { border-bottom: none; }
+        .feature-icon { width: 32px; height: 32px; background: #e8f5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 14px; color: #00c853; font-size: 16px; flex-shrink: 0; }
+        .feature-text { font-size: 15px; color: #333; }
+        .app-notice { background: #fff8e1; border-left: 4px solid #ff9500; border-radius: 0 8px 8px 0; padding: 16px; margin-bottom: 24px; }
+        .app-notice-title { font-size: 13px; font-weight: 700; color: #ff6b00; margin-bottom: 4px; }
+        .app-notice-text { font-size: 13px; color: #666; line-height: 1.5; }
+        .buy-button { display: block; width: 100%; padding: 20px; background: linear-gradient(135deg, #ff6b00 0%, #ff9500 100%); color: white; text-align: center; text-decoration: none; border-radius: 12px; font-size: 18px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 8px 24px rgba(255, 107, 0, 0.35); }
+        .urgency { text-align: center; margin-top: 16px; font-size: 14px; color: #ff4757; font-weight: 600; }
+        .footer { text-align: center; padding: 28px 24px; border-top: 1px solid #f0f0f0; }
+        .footer-brand { font-size: 14px; font-weight: 700; color: #1a1a1a; }
+        .footer-copy { font-size: 11px; color: #ccc; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.jpg" alt="Confere & Paga" class="logo">
+            <div>
+                <div class="brand-name">Confere & Paga</div>
+                <div class="brand-tag">Super Descontos</div>
+            </div>
+        </div>
+        <div class="promo-bar">🔥 OFERTA EXCLUSIVA TIKTOK SHOP</div>
+        <img src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/dd5b8a4f07f34a6e8f943cce23ef8c4c~tplv-aphluv4xwc-resize-png:630:630.png?dr=15580&t=555f072d&ps=933b5bde&shp=7745054a&shcp=9b759fb9&idc=my2&from=2001012042" alt="Creme Ganache" class="product-image">
+        <div class="product-info">
+            <h1 class="product-title">Creme Ganache Chocolate Branco e Avelã 1kg Lala Cream</h1>
+            <div class="price-card">
+                <div class="price-old">De R$ 89,90</div>
+                <div class="price-new">R$ 49<span class="price-cents">,90</span></div>
+                <div class="price-save">ECONOMIZE 44%</div>
+            </div>
+            <div class="features">
+                <div class="feature"><div class="feature-icon">✓</div><span class="feature-text">Peso: 1kg</span></div>
+                <div class="feature"><div class="feature-icon">✓</div><span class="feature-text">Frete grátis para todo Brasil</span></div>
+                <div class="feature"><div class="feature-icon">✓</div><span class="feature-text">Envio imediato</span></div>
+                <div class="feature"><div class="feature-icon">✓</div><span class="feature-text">Garantia contra defeito</span></div>
+            </div>
+            <div class="app-notice">
+                <div class="app-notice-title">📱 Antes de comprar</div>
+                <div class="app-notice-text">Tenha o app do TikTok instalado. Se não tiver, será necessário criar uma conta gratuita.</div>
+            </div>
+            <a href="https://vt.tiktok.com/ZS9BGKwgB4EbD-ZtHy9/" class="buy-button">🛒 COMPRAR AGORA</a>
+            <div class="urgency">⚠️ Últimas unidades disponíveis!</div>
+        </div>
+        <div class="footer">
+            <div class="footer-brand">Confere & Paga Oficial</div>
+            <div class="footer-copy">© 2026 Todos os direitos reservados</div>
+        </div>
+    </div>
+</body>
+</html>
